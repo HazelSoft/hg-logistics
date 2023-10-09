@@ -9,3 +9,15 @@ body, h1, p {
     margin: 0;
     padding: 0;
 }
+
+.btn{
+    font-size: 20px !important; 
+    color: white !important;
+    background-color: #27348B !important;
+    padding: 10px 26px !important;
+    transition-duration: 0.3s !important;
+}
+.btn:hover{
+    border: 1px solid white !important;
+    color: white !important;
+}
