@@ -10,10 +10,10 @@
     vertical-align: middle;
 }
 .about-hero h3:first-child{
-    color: #C7DFFF;
+    color: var(--light-blue-text);
 }
 .about-main-section-1 h3{
-    color: #27348B;
+    color: var(--dark-blue-text);
     font-size: 26px;
     font-weight: bold;
 }
@@ -21,7 +21,7 @@
     line-height: 32px;
 }
 .about-main-section-2{
-    background-color: #4A89DC;
+    background-color: var(--blue-bg);
 }
 .about-card-body{
     background-color: white;

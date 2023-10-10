@@ -5,6 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --blue-bg: #4A89DC;
+    --light-blue-text: #C7DFFF;
+    --dark-blue-text: #27348B;
+    --black-texts: #ffffff;
+  }
+
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -20,4 +27,21 @@ body, h1, p {
 .btn:hover{
     border: 1px solid white !important;
     color: white !important;
+}
+
+.btn-white{
+    color: var(--dark-blue-text);
+    background-color: white;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.btn-white:hover{
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-text);
 }
