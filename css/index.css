@@ -18,12 +18,15 @@ body, h1, p {
     padding: 0;
 }
 
+
+/* button styles */
 .btn{
     font-size: 20px !important; 
     color: white !important;
     background-color: #27348B !important;
     padding: 10px 26px !important;
     transition-duration: 0.3s !important;
+    text-decoration: none;
 }
 .btn:hover{
     border: 1px solid white !important;
@@ -33,16 +36,37 @@ body, h1, p {
 .btn-white{
     color: var(--dark-blue-text);
     background-color: white;
-    padding: 4px 20px;
-    font-size: 16px;
+    padding: 6px 32px;
+    font-size: 14px;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
     transition-duration: 0.3s;
     box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid var(--dark-blue-text);
+    text-decoration: none;
 }
 .btn-white:hover{
     box-sizing: border-box;
+    filter: brightness(120%) saturate(120%);
+}
+.btn-light-blue{
+    color: white;
+    background-color: var(--blue-text);
+    padding: 6px 32px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.btn-light-blue:hover{
+    box-sizing: border-box;
     border: 1px solid var(--dark-blue-text);
+}
+
+.btn-border{
+    border: 2px solid var(--blue-bg) !important;
 }

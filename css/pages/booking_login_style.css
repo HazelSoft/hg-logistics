@@ -1,0 +1,82 @@
+.booking-login-hero{
+    background-image: url("../../img/booking-hero-drop-shadow.png"), url("../../../img/booking-hero.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
+    background-size: cover, cover;
+    min-height: 300px;
+}
+.booking-login-hero h3{
+    color: white;
+    vertical-align: middle;
+}
+.booking-login-hero h3:first-child{
+    color: var(--light-blue-text);
+}
+.booking-login-main h5{
+    color: var(--dark-blue-text);
+}
+.booking-login-main input{
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.booking-login-main input::placeholder{
+    opacity: 0.5;
+    font-style: italic;
+}
+.booking-login-main input[type="checkbox"]{
+    width: unset;
+}
+.booking-login-main input[type="checkbox"] + label{
+    color: var(--blue-text);
+    margin-left: 18px;
+    margin-top: 18px;
+}
+.booking-login-signin-form .text-end{
+    color: var(--blue-text);
+}
+.booking-login-signin-form img:hover{
+    cursor: pointer;
+    transition-duration: 0.3s;
+    filter: brightness(120%) saturate(150%);
+}
+.booking-login-main .booking-login-signin-form{
+    position: relative;
+}
+.booking-login-main .booking-login-signin-form::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    height: 80%;
+    border-left: 1px solid grey;
+}
+.booking-login-signup-form > div{
+    min-height: 60%;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+.booking-login-signup-form h3{
+    color: #29235C;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.booking-login-signup-form h4{
+    color: var(--dark-blue-text);
+    font-size: 20px;
+    font-weight: bold;
+}
+.booking-login-signup-form p{
+    font-size: 16px;
+}
+
+/* -----------------------register thank you styles------------------- */
+
+.register-main h3{
+    color: var(--dark-blue-text);
+}
