@@ -397,14 +397,14 @@
 
         <!-- main - which cargo type section -->
         <section
-            class="row booking-form-main-section booking-form-main-section-billing booking-form-main-section-container mb-5">
+            class="row booking-form-main-section booking-form-main-section-billing booking-form-main-section-cargo-type mb-5">
             <div class="col-10 m-auto">
                 <div class="row my-4">
                     <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
 
                         <h3 class="text-center">WHICH CARGO TYPE ?</h3>
-                        <div class="w-75">
-                            <div class="row my-3">
+                        <div class="w-100 px-5 cargo-type-top-section">
+                            <div class="row my-4">
                                 <div class="col-md-3">
                                     <button class="w-100 h-100">
                                         <p class="p-0 m-0">
@@ -429,7 +429,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row my-3">
+                            <div class="row my-4">
                                 <div class="col-md-3">
                                     <button class="w-100 h-100">
                                         <p class="p-0 m-0">Rolls</p>
@@ -466,19 +466,55 @@
                             </div>
 
                         </div>
-                        <h4>What is the weight of each container?</h4>
-                        <div class="w-50">
-                            <div class="row my-3">
-                                <div class="col-md-8">
-                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
-                                </div>
-                                <div class="col-md-4">
-                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                        <div class="w-50 d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <input type="radio" id="kg/cm" name="measurement" checked>
+                                <label for="kg/cm" class="ms-2">kg/cm</label>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center ms-2">
+                                <input type="radio" id="lb/inch" name="measurement">
+                                <label for="lb/inch" class="ms-2">lb/inch</label>
+                            </div>
+                        </div>
+                        <div class="row my-4 w-100 cargo-type-bottom-row">
+                            <div class="col-md-3">
+                                <select name="country" id="country" required>
+                                    <option value="" selected disabled>select cargo type</option>
+                                    <option value="c1">cargo type 1</option>
+                                    <option value="c2">cargo type 2</option>
+                                    <option value="c3">cargo type 3</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-12 pb-2 pb-md-0">
+                                        <input id="text" type="text" required placeholder="weight per item (0 kg)">
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-4 p-0 m-0">
+                                        <input id="text" type="number" required placeholder="length">
+                                    </div>
+                                    <div class="col-4 p-0 m-0">
+                                        <input type="number" required placeholder="width">
+                                    </div>
+                                    <div class="col-4 p-0 m-0">
+                                        <input type="number" required placeholder="height">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="">add additional container type</a>
                     </div>
                 </div>
 
@@ -517,7 +553,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="./bookingOnlineFormOrigin.html" class="btn">PROCEED TO BOOKING</a>
+                    <a href="./payment.html" class="btn">PROCEED TO BOOKING</a>
                 </div>
             </div>
         </section>
@@ -539,6 +575,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+        let a = 1;
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+    </script>
 
 </body>
 
