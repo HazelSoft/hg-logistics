@@ -148,9 +148,12 @@ p {
   display: block;
 }
 
+.tracking-info-section h3:first-child {
+  font-size: 20px;
+}
 .tracking-info-section h3:last-child {
   color: var(--blue-text);
-  font-size: 24px;
+  font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
