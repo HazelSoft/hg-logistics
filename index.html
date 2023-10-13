@@ -28,7 +28,7 @@
     <!-- Navigation menu if needed -->
     <nav class="navbar sticky-top navbar-expand-lg px-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="./img/HG-Logistics-logo.png" alt="Logo" width="100%" height="40"
                     class="d-inline-block align-text-top">
 
@@ -100,12 +100,12 @@
                     management solutions and closely cooperates with selected partners globally. HG Logistics is a
                     full-service logistics broker and freight carrier. Whatever your business needs to ship, wherever
                     you need it, we’ll get it there.</p>
-                <a href="#" class="btn">ABOUT US</a>
+                <a href="./pages/about.html" class="btn">ABOUT US</a>
             </div>
         </div>
 
         <!-- card courosel section -->
-        <div class="carousel-container container-fluid px-5 home-carousel">
+        <div class="d-none d-md-block carousel-container container-fluid px-5 home-carousel">
             <div class="row">
                 <div class="col-12 d-flex flex-row justify-content-between">
                     <button class="carousel-arrow"><img src="./img/left-arrow.svg" alt="right-arrow"></button>
@@ -139,7 +139,7 @@
                 <div class="col-10 col-md-6 p-4 py-5 d-flex justify-content-between align-items-center flex-column">
                     <h3 class="text-center my-3 mt-5">TAILORED SOLUTIONS FOR <br> OVER-SIZED AND HEAVY LIFT CARGO <br>
                         AS WELL AS EPC PROJECT LOGISTICS</h3>
-                    <a href="#" class="btn">READ MORE</a>
+                    <a href="./pages/services/truckingDelivery.html" class="btn">READ MORE</a>
                 </div>
             </div>
             <!-- <div>
@@ -162,7 +162,7 @@
                             <li>- Trucking Delivery</li>
                             <li>- Sea Shipping</li>
                         </ul>
-                        <a class="btn btn-primary">TRANSPORT SERVICES</a>
+                        <a href="./pages/services/truckingDelivery.html" class="btn btn-primary">TRANSPORT SERVICES</a>
                     </div>
                 </div>
 
@@ -205,7 +205,7 @@
                             range of
                             products and services can contribute to the success of your business…..
                         </p>
-                        <button class="btn btn-primary">CHECK PRICES</button>
+                        <a href="./pages/getQuote.html" class="btn btn-primary">CHECK PRICES</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                             ensure that each shipment which you entrust to us arrives at its destination and that your
                             supply chain is continuously improved.
                         </p>
-                        <button class="btn btn-primary">BOOK NOW</button>
+                        <a href="./pages/booking/login.html" class="btn btn-primary">BOOK NOW</a>
                     </div>
                 </div>
 
@@ -246,30 +246,33 @@
     </main>
 
     <footer class="footer">
-        <div class="container-fluid main-footer">
+        <div class="container-fluid main-footer py-5 py-md-0">
             <div class="row">
                 <!-- Column 1 -->
-                <div class="col-md-4 footer-col1">
+                <div
+                    class="col-12 col-md-4 footer-col1 d-flex justify-content-start justify-content-md-center align-items-center">
                     <div class="d-flex justify-content-between align-items-start flex-column">
                         <img src="./img/HG-Logistics-logo.png" alt="Company Logo" width="180" class="mb-3">
-                        <p>HG Logistics (Pvt) Ltd is one of the world's leading providers of forwarding and logistics
+                        <p class="w-100">HG Logistics (Pvt) Ltd is one of the world's leading providers of forwarding
+                            and logistics
                             services, specializing in ocean freight, air freight, land & railway shipments</p>
                     </div>
                 </div>
                 <!-- Column 2 -->
                 <div class="col-md-4 footer-col2">
                     <ul class="footer-list p-0 m-0 my-3">
-                        <li><a href="./pages/about.html">ABOUT</a></li>
-                        <li><a href="#">BOOKING</a></li>
-                        <li><a href="#">CAREERS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">TRACKING</a></li>
-                        <li><a href="#">PRIVACY POLICY</a></li>
-                        <li><a href="#">PRICES</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/about.html">ABOUT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/getQuote.html">GET QUOTE</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/services/truckingDelivery.html">SERVICES</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/tracking.html">TRACKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/booking/login.html">BOOKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/services/airFreight.html">AIR FREIGHT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/services/seaShipping.html">SEA SHIPPING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/services/warehousing.html">WAREHOUSING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./pages/contact.html">CONTACT</a></li>
                     </ul>
-                    <h5>74 Kot Lakhpat, Quaid e Azam Industrial Estate, Lahore, Pakistan. 54700</h5>
+                    <h5 class="ps-2 ps-md-5">74 Kot Lakhpat, Quaid e Azam Industrial Estate, Lahore, Pakistan. 54700
+                    </h5>
                 </div>
                 <!-- Column 3 -->
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
@@ -279,12 +282,12 @@
         </div>
         <div class="container-fluid py-2 footer-end">
             <div class="row">
-                <div class="col-11 m-auto d-flex justify-content-between align-items-center">
-                    <p class="p-0 m-0">
+                <div class="col-md-11 m-auto d-flex justify-content-between align-items-center">
+                    <p class="p-0 m-0 text-start">
                         © 2022 HG Logistics All rights reserved.
                     </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <p class="m-0 me-2">Developed by: </p>
+                        <p class="m-0 me-2 text-start">Developed by: </p>
                         <img src="./img/hazelsoft logo.png" width="110" height="26" alt="hazelsoft">
                     </div>
                 </div>
