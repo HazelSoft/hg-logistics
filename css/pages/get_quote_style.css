@@ -1,0 +1,61 @@
+.get-quote-hero{
+    background-image: url("../../img/get-quote-hero-drop-shadow.png"), url("../../img/get-quote-hero.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
+    background-size: cover, cover;
+    min-height: 300px;
+}
+.get-quote-hero h3{
+    color: white;
+    vertical-align: middle;
+}
+.get-quote-hero h3:first-child{
+    color: var(--light-blue-text);
+}
+.get-quote-main-section-1 h3{
+    color: var(--dark-blue-text);
+    font-size: 26px;
+    font-weight: 400;
+}
+.get-quote-main-section-1 p{
+    line-height: 32px;
+}
+
+.get-quote-terms input{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.get-quote-terms label{
+    cursor: pointer;
+    color: var(--blue-text);
+}
+.submit-msg{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(255,0,0,1);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255,0,0,1);
+}
+.get-quote-form input, .get-quote-form textarea, .get-quote-form select{
+    border: 1px solid #707070;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.get-quote-form input::placeholder, .get-quote-form textarea::placeholder, .get-quote-form select::placeholder{
+    font-style: italic;
+    opacity: 0.5;
+}
+.get-quote-form select:required:invalid{
+    color: grey;
+    font-style: italic;
+    opacity: 0.8;
+}
+.get-quote-form textarea{
+    min-height: 220px;
+}
+.get-quote-form input[type="checkbox"]{
+    width: unset;
+    margin-right: 7px;
+}

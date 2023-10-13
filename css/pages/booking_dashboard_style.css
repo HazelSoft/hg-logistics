@@ -1,0 +1,35 @@
+.booking-dashboard-hero{
+    background-image: url("../../img/booking-hero-drop-shadow.png"), url("../../../img/booking-hero.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
+    background-size: cover, cover;
+    min-height: 300px;
+}
+.booking-dashboard-hero h3{
+    color: white;
+    vertical-align: middle;
+}
+.booking-dashboard-hero h3:first-child{
+    color: var(--light-blue-text);
+}
+.booking-dashboard-main{
+    margin-top: 24px;
+}
+.booking-dashboard-main h3{
+    color: var(--dark-blue-text);
+}
+.booking-dashboard-con button{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 16px 24px;
+    transition-duration: 0.3s;
+}
+.booking-dashboard-con button:hover{
+    filter: brightness(120%) saturate(120%);
+    border: unset !important;
+}
+.booking-dashboard-con span{
+    color: var(--dark-blue-text);
+}

@@ -1,0 +1,35 @@
+.nav-img {
+  width: 26px;
+  height: 26px;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-link {
+  color: #29235c !important;
+}
+.nav-link.active {
+  color: #4a89dc !important;
+}
+.nav-item-img {
+  padding-right: 20px;
+}
+.navbar {
+  background-color: white;
+}
+.dropdown-menu {
+  top: 51px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.dropdown-menu li a {
+  font-size: 12px !important;
+  color: var(--dark-blue-text);
+  padding: 0px 50px;
+  margin-right: 50px;
+  padding-left: 12px;
+}
+.dropdown-divider {
+  border-color: var(--light-blue-text) !important;
+}

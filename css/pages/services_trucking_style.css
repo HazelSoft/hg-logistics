@@ -1,0 +1,39 @@
+.services-hero{
+    background-image: url("../../img/services-trucking-hero-drop-shadow.png"), url("../../img/services-trucking-hero.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, bottom right;
+    background-size: cover, cover;
+    min-height: 300px;
+}
+.services-hero h3{
+    color: white;
+    vertical-align: middle;
+}
+.services-hero h3:first-child{
+    color: var(--light-blue-text);
+}
+.services-main-section-1 h3, .services-main-section-2 h3{
+    color: var(--dark-blue-text);
+    font-size: 26px;
+    font-weight: bold;
+}
+.services-main-section-1 p{
+    line-height: 26px;
+    font-size: 16px;
+}
+.services-book-now-section{
+    background-color: var(--blue-bg);
+}
+.services-book-now-section p{
+    color: white;
+}
+.services-book-now-section button{
+    border: 2px solid rgba(0,0,0,0);
+}
+.services-book-now-section button:hover{
+    border-width: 2px;
+}
+.warehousing-contact-us-text{
+    text-decoration: none;
+}
+

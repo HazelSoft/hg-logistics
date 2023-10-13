@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Logistics</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/pages/booking_payment_style.css">
+
+    <!-- Link to Bootstrap CSS (you can also use a CDN link here) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- temp -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../img/HG-Logistics-logo.png" alt="Logo" width="100%" height="40"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="../about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../services/truckingDelivery.html">- Trucking
+                                    Delivery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/airFreight.html">- Air Freight</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/seaShipping.html">- Sea Shipping</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/warehousing.html">-Warehousing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../getQuote.html">GET QUOTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tracking.html">TRACKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">CONTACT</a>
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../../img/nav-profile.svg" alt="profile-icon">
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../../img/nav-search.svg" alt="search-icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="container-fluid booking-payment-hero d-flex justify-content-start align-items-center">
+        <div class="px-md-5">
+            <h3>HG LOGISTICS</h3>
+            <h3>BOOKING</h3>
+        </div>
+    </section>
+    <main class="position-relative">
+
+
+        <!-- main - header section -->
+        <section class="booking-payment-header py-5">
+            <h3 class="text-center">PAYMENT METHOD</h3>
+        </section>
+
+        <!-- main - payment cards section -->
+        <section class="row booking-payment-section booking-form-main-section-billing mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="text-center"></h3>
+                        <h4>Click one of the options below:</h4>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12">
+                        <div class="upper-section row">
+                            <div class="col-md-3 my-3 my-md-0">
+                                <button class="w-100 h-100">
+                                    <img src="../../img/payment-visa.png" width="186" height="60" alt="">
+                                </button>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <button class="w-100 h-100">
+                                    <img src="../../img/payment-master-card.png" width="156" height="94" alt="">
+                                </button>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <button class="btn-border w-100 h-100">
+                                    <img src="../../img/payment-easypaisa.png" width="213" height="57" alt="">
+                                </button>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <button class="btn-border w-100 h-100">
+                                    <img src="../../img/payment-jazzcash.png" width="172" height="85" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main - payment options section -->
+        <section class="row booking-payment-section booking-form-main-section-billing mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="text-center"></h3>
+                        <h4>Click one of the options below:</h4>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12">
+                        <div class="row payment-options">
+                            <div class="col-md-3 my-3 my-md-0">
+                                <div class="px-4 py-5 d-flex justify-content-between align-items-start flex-column">
+                                    <img src="../../img/payment-visa.png" width="73" height="24" alt="">
+                                    <form action=""
+                                        class="py-2 d-flex justify-content-between align-items-start flex-column">
+                                        <input class="mt-2" type="text" placeholder="CARD NUMBER">
+                                        <input class="mt-2" type="text" placeholder="CARDHOLDER'S NAME">
+                                        <input class="mt-2" type="date" placeholder="MM/YYYY">
+                                        <input class="mt-2" type="number" placeholder="CVV">
+
+                                        <div
+                                            class="mt-2 w-100 d-flex justify-content-start align-items-center payment-card-checkbox">
+
+                                            <input class="p-0 me-2 m-0" type="checkbox" id="saveInfoVisa"><label
+                                                for="saveInfoVisa">Save
+                                                card
+                                                information</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <div class="px-4 py-5 d-flex justify-content-between align-items-start flex-column">
+                                    <img src="../../img/payment-master-card.png" width="60" height="36" alt="">
+                                    <form action=""
+                                        class="py-2 d-flex justify-content-between align-items-center flex-column">
+                                        <input class="mt-2" type="text" placeholder="CARD NUMBER">
+                                        <input class="mt-2" type="text" placeholder="CARDHOLDER'S NAME">
+                                        <input class="mt-2" type="date" placeholder="MM/YYYY">
+                                        <input class="mt-2" type="number" placeholder="CVV">
+
+                                        <div
+                                            class="mt-2 w-100 d-flex justify-content-start align-items-center payment-card-checkbox">
+
+                                            <input class="p-0 me-2 m-0" type="checkbox" id="saveInfoMaster"><label
+                                                for="saveInfoMaster">Save
+                                                card
+                                                information</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <div class="px-4 py-5 d-flex justify-content-between align-items-start flex-column">
+                                    <img src="../../img/payment-easypaisa.png" width="122" height="33" alt="">
+                                    <form action=""
+                                        class="py-2 d-flex justify-content-start align-items-center flex-column">
+                                        <input class="mt-2" type="text" placeholder="ACCOUNT NUMBER">
+                                        <input class="mt-2" type="text" placeholder="ACCOUNT HOLDER'S NAME">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-3 my-md-0">
+                                <div class="px-4 py-5 d-flex justify-content-between align-items-start flex-column">
+                                    <img src="../../img/payment-jazzcash.png" width="85" height="42" alt="">
+                                    <form action=""
+                                        class="py-2 d-flex justify-content-start align-items-center flex-column">
+                                        <input class="mt-2" type="text" placeholder="ACCOUNT NUMBER">
+                                        <input class="mt-2" type="text" placeholder="ACCOUNT HOLDER'S NAME">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column payment-btn-con">
+                <button class="btn px-5 py-2 mb-2">Next Step</button>
+                <button class="btn-white px-5 py-2">Back</button>
+            </div>
+
+        </section>
+
+        <section class="row my-5 payment-password-otp">
+            <div
+                class="col-10 py-5  m-auto d-flex justify-content-center align-items-center flex-column payment-btn-con">
+                <img class="my-3" src="../../img/payment-otp-lock.png" alt="secure">
+                <h3 class="text-center">Enter One Time Password (OTP)</h3>
+                <p class="text-center">One time password has been send to your registered phone number.</p>
+                <div class="px-0 w-50 d-flex justify-content-center align-items-center flex-row">
+                    <label for="otp"> XYZ - </label>
+                    <input class="w-75" type="text">
+                </div>
+                <a href="./bookingConfirmed.html" class="btn px-5 my-3"> Submit </a>
+            </div>
+
+        </section>
+
+        <!-- main - enter mptin section -->
+        <!-- <section class="mpin-section">
+            <div class="col-md-7 m-auto">
+                <div>
+                    <img src="../../img/payment-otp-lock.png" alt="secure payment">
+                    <p>Please enter MPIN on you mobile device.</p>
+                </div>
+                <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column payment-btn-con">
+                    <button class="btn px-5 py-2 mb-2">Next Step</button>
+                    <button class="btn-white px-5 py-2">Back</button>
+                </div>
+            </div>
+        </section> -->
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid main-footer py-5 py-md-0">
+            <div class="row">
+                <!-- Column 1 -->
+                <div
+                    class="col-12 col-md-4 footer-col1 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="d-flex justify-content-between align-items-start flex-column">
+                        <img src="../../img/HG-Logistics-logo.png" alt="Company Logo" width="180" class="mb-3">
+                        <p class="w-100">HG Logistics (Pvt) Ltd is one of the world's leading providers of forwarding
+                            and logistics
+                            services, specializing in ocean freight, air freight, land & railway shipments</p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-4 footer-col2">
+                    <ul class="footer-list p-0 m-0 my-3">
+                        <li class="ps-2 ps-md-5"><a href="../about.html">ABOUT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../getQuote.html">GET QUOTE</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/truckingDelivery.html">SERVICES</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../tracking.html">TRACKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./login.html">BOOKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/airFreight.html">AIR FREIGHT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/seaShipping.html">SEA SHIPPING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/warehousing.html">WAREHOUSING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+                    <h5 class="ps-2 ps-md-5">74 Kot Lakhpat, Quaid e Azam Industrial Estate, Lahore, Pakistan. 54700
+                    </h5>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="../../img/footer-app-store-btns.png" alt="Image" class="img-fluid" width="180"
+                        height="120">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-2 footer-end">
+            <div class="row">
+                <div class="col-md-11 m-auto d-flex justify-content-between align-items-center">
+                    <p class="p-0 m-0 text-start">
+                        © 2022 HG Logistics All rights reserved.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="m-0 me-2 text-start">Developed by: </p>
+                        <img src="../../img/hazelsoft logo.png" width="110" height="26" alt="hazelsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="js/index.js"></script>
+    <script src="js/pages/home_javascript.js"></script>
+
+    <!-- Link to Bootstrap JavaScript and npm packages (you can also use a CDN link here) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+        let a = 1;
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

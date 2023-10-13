@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Logistics</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/pages/tracking_style.css">
+
+    <!-- Link to Bootstrap CSS (you can also use a CDN link here) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/HG-Logistics-logo.png" alt="Logo" width="100%" height="40"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./services/truckingDelivery.html">- Trucking
+                                    Delivery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./services/airFreight.html">- Air Freight</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./services/seaShipping.html">- Sea Shipping</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./services/warehousing.html">-Warehousing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./getQuote.html">GET QUOTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./booking/login.html">BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tracking.html">TRACKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../img/nav-profile.svg" alt="profile-icon">
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../img/nav-search.svg" alt="search-icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero section -->
+        <section class="container-fluid tracking-hero d-flex justify-content-start align-items-center">
+            <div class="px-md-5">
+                <h3>HG LOGISTICS</h3>
+                <h3>SERVICES</h3>
+            </div>
+        </section>
+        <section class="container-fluid py-4">
+            <div class="row px-md-5">
+                <div class="col-md-6 p-5">
+                    <h1>Start Tracking <br> your supplies.</h1>
+                    <p>It's easy to track your cargo, simply choose your booking type and enter your tracking number</p>
+                    <form action="">
+                        <input class="py-2" type="text" placeholder="please enter your tracking number">
+                        <button class="btn-light-blue ms-3 py-2">TRACK</button>
+                    </form>
+                </div>
+                <div class="col-md-6 overflow-hidden">
+                    <img width="700" height="auto" src="../img/tracking-main.png" alt="track your order">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- main - delivered section -->
+        <section class="row tracking-main-section tracking-delivered-section mb-5">
+            <div class="col-11 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="text-center">Delivered</h3>
+                        <h4 class="text-center">Saturday, November 12th, 2022 - 12:38 am</h4>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-4 m-auto">
+
+                        <div class="wrapper">
+                            <ul class="StepProgress">
+                                <li class="StepProgress-item ">
+                                    <p class="p-0 m-0">November 12th, 2022 | 12:38 am</p>
+                                    <p class="p-0 m-0">Orlando, Florida</p>
+                                    <p class="p-0 m-0">Shipment delivered</p>
+                                </li>
+                                <li class="StepProgress-item mt-2">
+                                    <p class="p-0 m-0">November 12th, 2022 | 08:01 am</p>
+                                    <p class="p-0 m-0">Orlando, Florida</p>
+                                    <p class="p-0 m-0">Shipment out for delivery</p>
+                                </li>
+                                <li class="StepProgress-item mt-2">
+                                    <p class="p-0 m-0">November 11th, 2022 | 10:01 pm</p>
+                                    <p class="p-0 m-0">Miami, Florida</p>
+                                    <p class="p-0 m-0">Shipment reached destination</p>
+                                </li>
+                                <li class="StepProgress-item mt-2">
+                                    <p class="p-0 m-0">November 12th, 2022 | 12:38 am</p>
+                                    <p class="p-0 m-0">Orlando, Florida</p>
+                                    <p class="p-0 m-0">Shipment delivered</p>
+                                </li>
+                                <li class="StepProgress-item mt-2">
+                                    <p class="p-0 m-0">November 10th, 2022 | 11:30 pm</p>
+                                    <p class="p-0 m-0">Karachi, Pakistan</p>
+                                    <p class="p-0 m-0">Shipment arrived at origin</p>
+                                </li>
+                                <li class="StepProgress-item mt-2">
+                                    <p class="p-0 m-0">November 10th, 2022 | 05:01 pm</p>
+                                    <p class="p-0 m-0">Lahore, Pakistan</p>
+                                    <p class="p-0 m-0">Shipment booked for delivery</p>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row tracking-main-section tracking-info-section">
+            <div class="col-11 m-auto">
+                <div class="row my-4 py-4">
+                    <div class="col-4 px-5">
+                        <div>
+                            <h3>Origin</h3>
+                            <h3>Park View City, LHR, PK.</h3>
+                        </div>
+                        <div>
+                            <h3>SERVICE</h3>
+                            <h3>Air Freight</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 px-5">
+                        <div>
+                            <h3>DESTINATION</h3>
+                            <h3>FLorida, 54007, USA</h3>
+                        </div>
+                        <div>
+                            <h3>WEIGHT (lbs)</h3>
+                            <h3>4.75</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 px-5">
+                        <div>
+                            <h3>TRACKING NUMBER</h3>
+                            <h3>TXN0012554</h3>
+                        </div>
+                        <div>
+                            <h3>DIMENSIONS (cm)</h3>
+                            <h3>30x20x8</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid main-footer py-5 py-md-0">
+            <div class="row">
+                <!-- Column 1 -->
+                <div
+                    class="col-12 col-md-4 footer-col1 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="d-flex justify-content-between align-items-start flex-column">
+                        <img src="../img/HG-Logistics-logo.png" alt="Company Logo" width="180" class="mb-3">
+                        <p class="w-100">HG Logistics (Pvt) Ltd is one of the world's leading providers of forwarding
+                            and logistics
+                            services, specializing in ocean freight, air freight, land & railway shipments</p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-4 footer-col2">
+                    <ul class="footer-list p-0 m-0 my-3">
+                        <li class="ps-2 ps-md-5"><a href="./about.html">ABOUT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./getQuote.html">GET QUOTE</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./services/truckingDelivery.html">SERVICES</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./tracking.html">TRACKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./booking/login.html">BOOKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./services/airFreight.html">AIR FREIGHT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./services/seaShipping.html">SEA SHIPPING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./services/warehousing.html">WAREHOUSING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                    <h5 class="ps-2 ps-md-5">74 Kot Lakhpat, Quaid e Azam Industrial Estate, Lahore, Pakistan. 54700
+                    </h5>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="../img/footer-app-store-btns.png" alt="Image" class="img-fluid" width="180" height="120">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-2 footer-end">
+            <div class="row">
+                <div class="col-md-11 m-auto d-flex justify-content-between align-items-center">
+                    <p class="p-0 m-0 text-start">
+                        © 2022 HG Logistics All rights reserved.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="m-0 me-2 text-start">Developed by: </p>
+                        <img src="../img/hazelsoft logo.png" width="110" height="26" alt="hazelsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="js/index.js"></script>
+    <script src="js/pages/home_javascript.js"></script>
+
+    <!-- Link to Bootstrap JavaScript and npm packages (you can also use a CDN link here) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

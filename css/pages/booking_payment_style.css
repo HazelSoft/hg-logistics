@@ -1,0 +1,101 @@
+.booking-payment-hero{
+    background-image: url("../../img/booking-hero-drop-shadow.png"), url("../../../img/booking-hero.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, bottom;
+    background-size: cover, cover;
+    min-height: 300px;
+}
+.booking-payment-hero h3{
+    color: white;
+    vertical-align: middle;
+}
+.booking-payment-hero h3:first-child{
+    color: var(--light-blue-text);
+}
+.booking-payment-header h3{
+    color: var(--dark-blue-text);
+}
+.booking-payment-section > div{
+    border-radius: 16px;
+    min-height: 300px;
+}
+.booking-payment-section h3, .booking-payment-section .bottom-section h3{
+    color: var(--blue-text);
+    font-size: 20px;
+}
+.booking-payment-section button{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+    border: none;
+    background-color:  #F5F5F5;
+    padding: 10px 18px;
+    transition-duration: 0.3s;
+}
+.booking-payment-section button:hover{
+    filter: brightness(120%) saturate(120%);
+}
+.booking-payment-section button p:last-child{
+    color: grey;
+}
+.booking-payment-section select, .booking-payment-section input, .payment-password-otp input{
+    border: none;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 14px;
+    width: 100%;
+    color: black;
+}
+.booking-payment-section select::placeholder, .booking-payment-section input::placeholder{
+    font-style: normal;
+    color: black;
+}
+.booking-payment-section select:required:invalid{
+    color: grey;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.payment-options > div > div{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 55vh;
+    
+}
+.payment-options form{
+    height: 90%;
+    width: 100%;
+}
+.payment-card-checkbox input{
+    width: unset;
+    height: unset;
+}
+.payment-btn-con button{
+    font-size: 18px !important;
+    min-width: 250px;
+}
+.payment-password-otp > div{
+    background-color: #F5F5F5;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.payment-password-otp h3{
+    color: var(--dark-blue-text);
+}
+.payment-password-otp p{
+    color: var(--blue-text);
+}
+main{
+    position: relative;
+}
+.mpin-section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Add a semi-transparent white background */
+    filter: blur(4px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: auto;
+}
