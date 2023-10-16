@@ -1,0 +1,8 @@
+.booking-confirmed-com > div{
+    background-color: #F5F5F5;
+    border-radius: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.booking-confirmed-com h3{
+    color: black;
+}

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Logistics</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/pages/booking_online_form_style.css">
+
+    <!-- Link to Bootstrap CSS (you can also use a CDN link here) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- temp -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../img/HG-Logistics-logo.png" alt="Logo" class="d-inline-block align-text-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../services/truckingDelivery.html">- Trucking
+                                    Delivery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/airFreight.html">- Air Freight</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/seaShipping.html">- Sea Shipping</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../services/warehousing.html">-Warehousing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../getQuote.html">GET QUOTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./login.html">BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tracking.html">TRACKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">CONTACT</a>
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../../img/nav-profile.svg" alt="profile-icon">
+                    </li>
+                    <li class="navbar-brand nav-item-img">
+                        <img class="nav-img" src="../../img/nav-search.svg" alt="search-icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero section -->
+        <section class="container-fluid booking-online-form-hero d-flex justify-content-start align-items-center">
+            <div class="px-md-5">
+                <h3>HG LOGISTICS</h3>
+                <h3>BOOKING</h3>
+            </div>
+        </section>
+
+        <!-- main - header section -->
+        <section class="booking-form-main-section-1 my-5">
+            <h3 class="text-center">BOOK ONLINE</h3>
+        </section>
+
+        <!-- main - origin section -->
+        <section class="row booking-form-main-section mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <h3 class="text-center">ORIGIN</h3>
+                </div>
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-lg-6 px-4">
+                        <div class="upper-section row">
+                            <h3 class="mb-4">Where do you want to handover the shipment?</h3>
+                            <div class="col-md-6">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Pick up from your address</p>
+                                    <p>Pick-up by HG Logistics</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Self drop off at Terminal</p>
+                                    <p>No Pick-Up byHG Logistics required</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bottom-section mt-5">
+                            <h3>From which country you want to ship?</h3>
+                            <div class="row my-4 pt-3">
+                                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                                    <label for="country"> Country/Region* </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select name="country" id="country" required>
+                                        <option value="" selected disabled>select your country/region</option>
+                                        <option value="c1">country 1</option>
+                                        <option value="c2">country 2</option>
+                                        <option value="c3">country 3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right column -->
+                    <div class="col-lg-6 px-4">
+                        <div class="upper-section row">
+                            <h3 class="mb-4">How do you want to select the Terminal?</h3>
+                            <div class="col-md-6">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Enter the shipper's address</p>
+                                    <p> Most suitable option based on location and tradelane will be selected.</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Enter the exact terminal </p>
+                                    <p>If you ship regularly, this option can be used to enter a specific routing.</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- one div will display at a time from the following -->
+                        <div class="bottom-section mt-5 d-none">
+                            <h3>Where do you want the shipment to be picked-up ?</h3>
+                            <div class="row my-4 pt-3">
+                                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                                    <label for="country"> City (tehsil/district)* </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select name="country" id="country" required>
+                                        <option value="" selected disabled>select your city</option>
+                                        <option value="c1">city 1</option>
+                                        <option value="c2">city 2</option>
+                                        <option value="c3">city 3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bottom-section mt-5">
+                            <h3>From which country you want to ship?</h3>
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="address" type="address" required
+                                        placeholder="start typing street address">
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="addressSecondLine" type="address" required
+                                        placeholder="second line of address">
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-md-4 pb-2 pb-md-0">
+                                    <input id="text" type="text" required placeholder="postal code">
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="city" required placeholder="enter your city">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main - destination section -->
+        <section class="row booking-form-main-section mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <h3 class="text-center">DESTINATION</h3>
+                </div>
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-lg-6 ps-4">
+                        <div class="upper-section row">
+                            <h3 class="mb-4">Where do you want the shipment to be delivered?</h3>
+                            <div class="col-md-6">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Deliver to your address </p>
+                                    <p>Drop-Off by HG Logistics</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Self collection from the Terminal </p>
+                                    <p>No final delivery by HG Logistics</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bottom-section mt-5">
+                            <h3>To which country you want to ship?</h3>
+                            <div class="row my-4 pt-3">
+                                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                                    <label for="country"> Country/Region* </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select name="country" id="country" required>
+                                        <option value="" selected disabled>select your country/region</option>
+                                        <option value="c1">country 1</option>
+                                        <option value="c2">country 2</option>
+                                        <option value="c3">country 3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right column -->
+                    <div class="col-lg-6 pe-4">
+                        <div class="upper-section row">
+                            <h3 class="mb-4">How do you want to select the Terminal?</h3>
+                            <div class="col-md-6">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Enter the consignee’s address </p>
+                                    <p> Most suitable option based on location and tradelane will be selected.</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Enter the exact terminal </p>
+                                    <p>If you ship regularly, this option can be used to enter a specific routing.</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- one div will display at a time from the following -->
+                        <div class="bottom-section mt-5 ">
+                            <h3>Where do you want the shipment to be dropped off ?</h3>
+                            <div class="row my-4 pt-3">
+                                <div class="col-md-3 d-flex justify-content-start align-items-center">
+                                    <label for="country"> City (tehsil/district)* </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select name="country" id="country" required>
+                                        <option value="" selected disabled>select your city</option>
+                                        <option value="c1">city 1</option>
+                                        <option value="c2">city 2</option>
+                                        <option value="c3">city 3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bottom-section mt-5 d-none">
+                            <h3>Where do you want the shipment to be dropped off ?</h3>
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="address" type="address" required
+                                        placeholder="start typing street address">
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="addressSecondLine" type="address" required
+                                        placeholder="second line of address">
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-md-4 pb-2 pb-md-0">
+                                    <input id="text" type="text" required placeholder="postal code">
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="city" required placeholder="enter your city">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main - billing section -->
+        <section class="row booking-form-main-section booking-form-main-section-billing mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+
+                        <h3 class="text-center">BILLING</h3>
+                        <h4>Please select your billing Country/Region</h4>
+                        <p>The billing Country/Region cannot be changed later, a new quote will be required.</p>
+                        <div class="w-75">
+                            <select name="country" id="country" required>
+                                <option value="" selected disabled>select your country/region</option>
+                                <option value="c1">country 1</option>
+                                <option value="c2">country 2</option>
+                                <option value="c3">country 3</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-10 m-auto">
+                        <h3 class="text-center">CARGO DETAILS</h3>
+                        <h4 class="text-center py-2">Which Cargo Type?</h4>
+                        <div class="upper-section row">
+                            <div class="col-md-6 col-lg-4 pt-3 pt-lg-0">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Quick Estimation </p>
+                                    <p>Enter total weight and volume only, to get an estimated price, full loose cargo
+                                        details will be required to complete the booking.</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6 col-lg-4 pt-3 pt-lg-0">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">Full Container Load </p>
+                                    <p>Ocean/rail container type, quantity, net or gross weight</p>
+                                </button>
+                            </div>
+                            <div class="col-md-6 col-lg-4 pt-3 pt-lg-0">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Loose Cargo </p>
+                                    <p>Type (Pallets, boxes, crates...), quantity, weight and dimensions individually
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main - quick estimation section -->
+        <section class="row booking-form-main-section booking-form-main-section-billing mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+
+                        <h3 class="text-center">QUICK ESTIMATION</h3>
+                        <h4>What is the total weight of your shipment?</h4>
+                        <div class="w-50">
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="shipmentWeight" type="number" required placeholder="0 kg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4>What is the total volume of your shipment?</h4>
+                        <div class="w-50">
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- main - container type 1 section -->
+        <section
+            class="d-none row booking-form-main-section booking-form-main-section-billing booking-form-main-section-container mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+
+                        <h3 class="text-center">CONTAINER TYPE - 1</h3>
+                        <h4>Which container type ?</h4>
+                        <div class="w-100 px-0 px-lg-5 py-3">
+                            <div class="row my-3">
+                                <div class="col-md-6">
+                                    <button class="w-100 h-100">
+                                        20' Standard Dry Container
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="w-100 h-100">
+                                        40' High Cube Dry Container
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-md-6">
+                                    <button class="w-100 h-100">
+                                        40' Standard Dry Container
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="w-100 h-100">
+                                        45' High Cube Dry Container
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4>How many containers ?</h4>
+                        <div class="w-50">
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4>What is the weight of each container?</h4>
+                        <div class="w-50">
+                            <div class="row my-3">
+                                <div class="col-md-8">
+                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                                </div>
+                                <div class="col-md-4">
+                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="">add additional container type</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- main - which cargo type section -->
+        <section
+            class="d-none row booking-form-main-section booking-form-main-section-billing booking-form-main-section-cargo-type mb-5">
+            <div class="col-10 m-auto">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+
+                        <h3 class="text-center">WHICH CARGO TYPE ?</h3>
+                        <div class="w-100 px-5 cargo-type-top-section">
+                            <div class="row my-4">
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">
+                                            Pallets/Skids
+                                        </p>
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Bags</p>
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Cartons</p>
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Crates</p>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Rolls</p>
+
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Wooden Cases</p>
+
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">Drum</p>
+
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                    <button class="w-100 h-100">
+                                        <p class="p-0 m-0">IBC Tank</p>
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4>How many containers ?</h4>
+                        <div class="w-50">
+                            <div class="row my-3">
+                                <div class="col-md-12">
+                                    <input id="shipmentVolume" type="number" required placeholder="0 m">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-50 d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <input type="radio" id="kg/cm" name="measurement" checked>
+                                <label for="kg/cm" class="ms-2">kg/cm</label>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center ms-2">
+                                <input type="radio" id="lb/inch" name="measurement">
+                                <label for="lb/inch" class="ms-2">lb/inch</label>
+                            </div>
+                        </div>
+                        <div class="row my-4 w-100 cargo-type-bottom-row">
+                            <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                <select name="country" id="country" required>
+                                    <option value="" selected disabled>select cargo type</option>
+                                    <option value="c1">cargo type 1</option>
+                                    <option value="c2">cargo type 2</option>
+                                    <option value="c3">cargo type 3</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                <div class="row">
+                                    <div class="col-md-12 pb-2 pb-md-0">
+                                        <input id="text" type="text" required placeholder="weight per item (0 kg)">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                                <div class="row">
+                                    <div class="col-4 p-0 m-0">
+                                        <input id="text" type="number" required placeholder="length">
+                                    </div>
+                                    <div class="col-4 p-0 m-0">
+                                        <input type="number" required placeholder="width">
+                                    </div>
+                                    <div class="col-4 p-0 m-0">
+                                        <input type="number" required placeholder="height">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- main - special handeling -->
+        <section class="row booking-form-main-section booking-form-main-section-billing mb-5">
+            <div class="col-10 m-auto" style="background-color: transparent; border: unset;">
+                <div class="row my-4">
+                    <div class="col-10 m-auto d-flex justify-content-center align-items-center flex-column">
+
+                        <h3 class="text-center">SPECIAL HANDLING</h3>
+                        <h4>Do you have special handling requirements?</h4>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-10 m-auto">
+                        <div class="upper-section row">
+
+                            <div class="col-lg-4 ms-auto">
+                                <button class="w-100 h-100">
+                                    <p class="p-0 m-0">General Cargo </p>
+                                    <p>Commodities which do NOT require special handling. Stackable cargo only.</p>
+                                </button>
+                            </div>
+                            <div class="col-lg-4 me-auto">
+                                <button class="btn-border w-100 h-100">
+                                    <p class="p-0 m-0">Special Handling </p>
+                                    <p>Commodities such as Dangerous Goods, Lithium Batteries, Temperature Controlled,
+                                        Restricted Commodities. AND/OR non -stackable cargo.
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="./payment.html" class="btn">PROCEED TO BOOKING</a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid main-footer py-5 py-lg-0">
+            <div class="row">
+                <!-- Column 1 -->
+                <div
+                    class="col-12 col-lg-4 footer-col1 d-flex justify-content-start justify-content-md-center align-items-center">
+                    <div class="d-flex justify-content-between align-items-start flex-column">
+                        <img src="../../img/HG-Logistics-logo.png" alt="Company Logo" width="180" class="mb-3">
+                        <p class="w-100">HG Logistics (Pvt) Ltd is one of the world's leading providers of forwarding
+                            and logistics
+                            services, specializing in ocean freight, air freight, land & railway shipments</p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-lg-4 footer-col2 px-sm-5 px-lg-0 mx-sm-3 mx-lg-0">
+                    <ul class="footer-list p-0 m-0 my-3">
+                        <li class="ps-2 ps-md-5"><a href="../about.html">ABOUT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../getQuote.html">GET QUOTE</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/truckingDelivery.html">SERVICES</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../tracking.html">TRACKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="./login.html">BOOKING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/airFreight.html">AIR FREIGHT</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/seaShipping.html">SEA SHIPPING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../services/warehousing.html">WAREHOUSING</a></li>
+                        <li class="ps-2 ps-md-5"><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+                    <h5 class="text-center">74 Kot Lakhpat, Quaid e Azam Industrial Estate, Lahore, Pakistan. 54700
+                    </h5>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <img src="../../img/footer-app-store-btns.png" alt="Image" class="img-fluid" width="180"
+                        height="120">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-2 footer-end">
+            <div class="row">
+                <div class="col-md-11 m-auto d-flex justify-content-between align-items-center">
+                    <p class="p-0 m-0 text-start">
+                        © 2022 HG Logistics All rights reserved.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="m-0 me-2 text-start">Developed by: </p>
+                        <img src="../../img/hazelsoft logo.png" width="110" height="26" alt="hazelsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="js/index.js"></script>
+    <script src="js/pages/home_javascript.js"></script>
+
+    <!-- Link to Bootstrap JavaScript and npm packages (you can also use a CDN link here) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+        let a = 1;
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
